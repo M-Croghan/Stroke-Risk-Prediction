@@ -1,4 +1,4 @@
-# Stroke-Risk-Prediction
+# Stroke-Risk-Prediction ("Risk Screen")
 Flask application that leverages machine learning to predict stroke risk.
 
 Through the use of Python with a lot of support from Jupyter Notebook & various libraries for data exploration (Numpy, Pandas, Matplotlib, etc.)
