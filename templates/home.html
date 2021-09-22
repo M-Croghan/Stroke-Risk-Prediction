@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}">
+      <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+<div id="header_form">
+    <h2>WELCOME TO RISK SCREEN</h2>
+</div>
+
+<div id="homemsg">
+    <div id="message">
+        <h3>Please Enter Patient Information</h3>
+        <p>Risk Screen analyzes an array of diagnostic and lifestyle factors to provide a prediction of an individual's
+            risk of suffering a stroke.</p>
+    </div>
+</div>
+
+<div id="mainbox">
+    <div id="formbox">
+        <form method="POST" action="/prediction">
+<!-- GENDER -->
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="gender"><b>Gender</b></label>
+      <select name="gender" class="form-control">
+      	<option value="1">Male</option>
+    	<option value="0">Female</option>
+  	  </select>
+    </div>
+ <!-- AGE -->
+    <div class="form-group col-md-6">
+      <label for="age"><b>Age</b></label>
+      <input type="number" name="age" class="form-control" placeholder="---" required="required">
+    </div>
+  </div>
+ <!-- HYPERTENSION -->
+  <div class="form-row">
+    <div class="form-group col-md-6">
+    	<label for="hypertension"><b>Hypertension</b></label>
+    	<select name="hypertension" class="form-control">
+    		<option value="1">Yes</option>
+    		<option value="0">No</option>
+    	</select>
+    </div>
+ <!-- HEART DISEASE -->
+    <div class="form-group col-md-6">
+    	<label for="heart_disease"><b>Heart disease</b></label>
+    	<select name="heart_disease" class="form-control">
+    		<option value="1">Yes</option>
+    		<option value="0">No</option>
+    	</select>
+    </div>
+  </div>
+  <!-- MARRIAGE STATUS -->
+  <div class="form-row">
+    <div class="form-group col-md-6">
+    	<label for="ever_married"><b>Married</b></label>
+    	<select name="ever_married" class="form-control">
+    		<option value="1">Yes</option>
+            <option value="0">No</option>
+    	</select>
+    </div>
+ <!-- WORK TYPE -->
+    <div class="form-group col-md-6">
+    	<label for="work_type"><b>Work type</b></label>
+    	<select name="work_type" class="form-control">
+    		<option value="0">Government Job</option>
+    		<option value="1">Never Worked</option>
+    		<option value="2">Private</option>
+    		<option value="3">Self-Employed</option>
+            <option value="4">Children</option>
+    	</select>
+    </div>
+  </div>
+  <!-- RESIDENCE -->
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="Residence_type"><b>Residence type</b></label>
+      <select name="Residence_type" class="form-control">
+      	<option value="0">Rural</option>
+    	<option value="1">Urban</option>
+  	  </select>
+    </div>
+ <!-- GLUCOSE -->
+    <div class="form-group col-md-6">
+      <label for="avg_glucose_level"><b>Glucose level</b></label>
+      <input type="number" name="avg_glucose_level" class="form-control" placeholder="---" required="required">
+    </div>
+  </div>
+  <!-- BMI -->
+  <div class="form-row">
+    <div class="form-group col-md-6">
+    	<label for="bmi"><b>BMI</b></label>
+    	<input type="number" name="bmi" class="form-control" placeholder="--.-" required="required">
+    </div>
+ <!-- SMOKING STATUS -->
+    <div class="form-group col-md-6">
+      <label for="smoking_status"><b>Smoking status</b></label>
+      <select name="smoking_status" class="form-control">
+          <option value="0">Unknown</option>
+      	<option value="1">Formerly Smoked</option>
+    	<option value="2">Never Smoked</option>
+    	<option value="3">Smokes</option>
+
+  	  </select>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary"><b>Display Prediction</b></button>
+</form>
+    </div>
+</div>
+<div id="pat_info">
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}">
+    <meta charset="UTF-8">
+    <title>"{{ title }}"</title>
+</head>
+<body>
+<div>
+    <div id="assessment_header">
+        <h1>RISK ASSESSMENT: </h1><h1 id="{{ title }}">{{ risk }}</h1>
+    </div>
+    <div id="assessment_window">
+        <div id="assessment_1">
+            <h3>The patient's current predicted risk of stroke is {{ risk }}.</h3>
+            <p> A machine learning model used a logistic regression algorithm to assess the patient's current risk of stroke.
+                The predicted probability of stroke risk is: {{ prob }} %.</p>
+        </div>
+    </div>
+    <div id="data_img">
+        <img src= "../static/img/features.png"  alt="features">
+        <img src= "../static/img/hm.png"  alt="features">
+    </div>
+
+    <div id="data_img">
+        <img src= "../static/img/gender.png"  alt="features">
+        <img src= "../static/img/age.png"  alt="features">
+        <img src= "../static/img/bmi.png"  alt="features">
+    </div>
+
+    <form action="/home" method="POST">
+        <button type="submit" id="assessment_header">RETURN HOME</button>
+    </form>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,167 @@
+#main
+{
+    background-color: #2f4faa;
+    padding: 10px;
+    width: 300px;
+    margin: 5px auto;
+
+}
+
+#mainbox, #homemsg
+{
+    background-color: #2f4faa;
+    padding: 10px;
+    width: 400px;
+    margin: 5px auto;
+}
+
+#pat_info
+{
+    margin: 5px auto;
+    padding: 5px;
+    width: 600px;
+    position: center;
+    display: flex;
+    justify-content: center;
+}
+
+#message{
+    background-color: azure;
+    text-align: center;
+    padding: 5px;
+}
+
+#formbox{
+    background-color: #0297bf;
+    padding: 5px;
+    margin: 5px auto;
+    height: auto;
+    width: 275px;
+    position: relative;
+    text-align: left;
+}
+
+
+#login
+{
+    background-color: #0297bf;
+    padding: 5px;
+    margin: 5px auto;
+    height: auto;
+    width: 200px;
+    position: relative;
+    text-align: center;
+
+}
+
+#header
+{
+    background-color: #0297bf;
+    padding: 10px;
+    margin: 0 auto;
+    height: auto;
+    width: 300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+}
+
+#header_form
+{
+    background-color: #0297bf;
+    padding: 10px;
+    margin: 0 auto;
+    height: auto;
+    width: 400px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+
+h1,h2
+{
+    font-family: "JetBrains Mono ExtraBold", sans-serif;
+    text-align: center;
+    color: azure;
+}
+
+p, h3
+{
+    font-family: "JetBrains Mono ExtraBold", sans-serif;
+}
+
+body {
+    background-color: #26cdd1;
+}
+
+.form-row
+{
+    color: azure;
+}
+
+#ref_img
+{
+    border: 15px solid #2f4faa;
+    padding: 5px;
+    margin: 5px;
+}
+
+#assessment_header, #assessment_window
+{
+
+    background-color: #0297bf;
+    padding: 10px;
+    margin: 0 auto;
+    height: auto;
+    width: 550px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+#assessment_1
+{
+    border: 5px solid #2f4faa;
+    background-color: azure;
+    padding: 10px;
+    margin: 0 auto;
+    height: auto;
+    width: 470px;
+}
+
+#low{
+    color: chartreuse;
+}
+
+#high
+{
+    color: red;
+}
+
+#data_img
+{
+    border: 5px solid #2f4faa;
+    background-color: azure;
+    padding: 10px;
+    margin: 0 auto;
+    height: auto;
+    width: 1250px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+#data_img1
+{
+    border: 5px solid #2f4faa;
+    background-color: azure;
+    padding: 10px;
+    margin: 0 auto;
+    height: auto;
+    width: 1450px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
